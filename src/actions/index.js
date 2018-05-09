@@ -120,8 +120,8 @@ import {
         })
     }
     }
-  
-    export function saveNewSupportRequest({title, body}, _id, callback) {
+   
+    export function saveNewSupportRequest({title, body}, callback) {
       return function(dispatch) {
         axios.post(`${ROOT_URL}/support-request/add`, {title, body}, {
           headers: { authorization: localStorage.getItem('token') }

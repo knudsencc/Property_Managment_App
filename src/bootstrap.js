@@ -11,18 +11,13 @@ const createStoreWithMiddleware = applyMiddleware(thunk)(compose((window.devTool
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
-
-
 import history from './history';
-
 import Signin from './components/auth/signin';
 import Signup from './components/auth/signup';
-
 import Newsletter from './components/newsletter/newsletter';
 import NewsletterDetail from './components/newsletter/newsletter_detail';
 import EditNewsletter from './components/newsletter/newsletter_edit';
 import AddNewsletter from './components/newsletter/newsletter_add';
-
 import SupportRequest from './components/supportRequest/supportRequest';
 import EditSupportRequest from './components/supportRequest/supportRequest_edit';
 import AddSupportRequest from './components/supportRequest/supportRequest_add';
@@ -51,5 +46,5 @@ function main() {
     </Provider>
     , document.querySelector('.app-wrapper'));
 }
-
+ 
 document.addEventListener('DOMContentLoaded', main);

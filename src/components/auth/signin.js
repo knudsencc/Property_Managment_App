@@ -8,7 +8,7 @@ class Signin extends Component {
   renderInput(field) {
     return <input className="form-control" {...field.input} type="field.type"/>
   }
-
+ 
   handleFormSubmit({email, password}) {
     this.props.signinUser({email, password})
   }
